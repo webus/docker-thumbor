@@ -1,8 +1,8 @@
 thumbor:
   build: thumbor
   volumes:
-    - data:/data
-    - logs:/logs
+    - ./data:/data
+    - ./logs:/logs
   ports:
     - "8000:8000" # thumbor port
     - "8001:80" # nginx port (cache)
